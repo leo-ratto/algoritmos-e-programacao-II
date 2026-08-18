@@ -29,18 +29,18 @@ seguinte fórmula: A = 4*𝜋*r^2
 */
 /*
 int main(){
-    
-float r, pi = 3.141592;
+        
+    float r, pi = 3.141592;
 
-printf("Insira o valor do raio em cm: ");
+    printf("Insira o valor do raio em cm: ");
 
-scanf("%f", &r);
+    scanf("%f", &r);
 
-float area = 4 * pi * r * r;
+    float area = 4 * pi * r * r;
 
-printf("Area da esfera: %.2fcm³\n", area);
+    printf("Area da esfera: %.2fcm³\n", area);
 
-return 0;    
+    return 0;    
 }
 */
 
@@ -54,29 +54,29 @@ publicação multiplicando-o por 2.
 /*
 int main(){
     
-char titulo[50];
+    char titulo[50];
 
-unsigned int paginas, ano;
+    unsigned int paginas, ano;
 
-printf("Insira o título do livro: ");
-fgets(titulo, sizeof(titulo), stdin);
-titulo[strcspn(titulo, "\n")] = 0;
+    printf("Insira o título do livro: ");
+    fgets(titulo, sizeof(titulo), stdin);
+    titulo[strcspn(titulo, "\n")] = 0;
 
-printf("\nInsira o número de páginas do livro: ");
-scanf("%u", &paginas);
+    printf("\nInsira o número de páginas do livro: ");
+    scanf("%u", &paginas);
 
-printf("\nInsira o ano de publicação do livro: ");
-scanf("%u", &ano);
+    printf("\nInsira o ano de publicação do livro: ");
+    scanf("%u", &ano);
 
-int caracteres = strlen(titulo);
+    int caracteres = strlen(titulo);
 
-paginas <<= 1;
+    paginas <<= 1;
 
-ano *= 2;
+    ano *= 2;
 
-printf("\nTítulo: %s\nNúmero de caracteres: %d\nNúmero de páginas dobrado: %u\nAno de publicação * 2: %u\n", titulo, caracteres, paginas, ano);
+    printf("\nTítulo: %s\nNúmero de caracteres: %d\nNúmero de páginas dobrado: %u\nAno de publicação * 2: %u\n", titulo, caracteres, paginas, ano);
 
-return 0;
+    return 0;
 }
 */
 
@@ -91,35 +91,35 @@ produzidos forem superior a 1000.
 /*
 int main(){
     
-char nome[50];
+    char nome[50];
 
-unsigned int itens, horas, dia;
+    unsigned int itens, horas, dia;
 
-printf("Insira o nome da linha de montagem: ");
-fgets(nome, sizeof(nome), stdin);
-nome[strcspn(nome, "\n")] = 0;
+    printf("Insira o nome da linha de montagem: ");
+    fgets(nome, sizeof(nome), stdin);
+    nome[strcspn(nome, "\n")] = 0;
 
-printf("\nInsira o total de itens produzidos por hora: ");
-scanf("%u", &itens);
+    printf("\nInsira o total de itens produzidos por hora: ");
+    scanf("%u", &itens);
 
-printf("\nInsira o total de horas trabalhadas no dia: ");
-scanf("%u", &horas);
+    printf("\nInsira o total de horas trabalhadas no dia: ");
+    scanf("%u", &horas);
 
-dia = horas * itens;
+    dia = horas * itens;
 
-dia = (dia << 1) + dia;
+    dia = (dia << 1) + dia;
 
-printf("\nNome da linha de montagem: %s\nTriplo da produção: %u\nProdutividade: ", nome, dia);
+    printf("\nNome da linha de montagem: %s\nTriplo da produção: %u\nProdutividade: ", nome, dia);
 
-if (dia >= 1000){
-    printf("1\n");
-}
+    if (dia >= 1000){
+        printf("1\n");
+    }
 
-else{
-    printf("0\n");
-}
+    else{
+        printf("0\n");
+    }
 
-return 0;
+    return 0;
 }
 */
 
